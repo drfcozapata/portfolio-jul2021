@@ -27,6 +27,12 @@ html {
 	--black-light2: rgba(0, 0, 0, 0.5);
 	--black-light3: rgb(40, 40, 40);
 	--black-light4: rgb(15, 15, 15);
+	--degrad-bg: linear-gradient(
+		135deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(9, 9, 121, 1) 50%,
+		rgba(0, 212, 255, 1) 100%
+	);
 	--my-yellow: rgb(255, 217, 0);
 	--bg-grey1: rgba(164, 164, 164, 0.15);
 	--bg-grey2: rgb(10, 10, 10);
@@ -162,7 +168,7 @@ i {
 
 /** Header **/
 header {
-	background-color: var(--black-light1);
+	background-image: var(--degrad-bg);
 	padding-bottom: 10rem;
 	clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
 }
@@ -480,7 +486,7 @@ h2 {
 
 /** Footer **/
 .footer {
-	background-color: var(--black-light1);
+	background-image: var(--degrad-bg);
 	color: var(--white);
 	padding-top: 10rem;
 	clip-path: polygon(0 0, 100% 10rem, 100% 100%, 0 100%);
