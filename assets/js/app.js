@@ -1,12 +1,17 @@
 /*****
- * AGREGA 'USE STRICT' Y VERIFICA QUE EL DOM ESTÁ CARGADO ANTES DE INICIAR EL SCRIPT
  * @author: Francisco Zapata
  *****/
 
-(() => {
-	'use strict';
+const nav = document.querySelector('.nav');
+const hamburMenu = document.querySelector('.hambur-menu');
 
-	document.addEventListener('DOMContentLoaded', () => {
-		// ESCRIBIR EL CÓDIGO A PARTIR DE AQUÍ
-	}); // DOM CONTENT LOADED
-})();
+/* Event Listeners */
+eventListener();
+function eventListener() {
+	hamburMenu.addEventListener('click', desplegarMenu);
+}
+
+/* Functions */
+function desplegarMenu() {
+	nav.classList.toggle('hidden');
+}
