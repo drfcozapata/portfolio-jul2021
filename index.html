@@ -14,43 +14,46 @@
 		<header>
 			<div class="nav-bar">
 				<div class="navegation container">
-					<div class="logo col-4">
+					<div class="logo">
 						<h1><a href="index.html">Francisco Zapata</a></h1>
 						<div class="mini-yellow-bar"></div>
 					</div>
-					<div class="col-8">
-						<ul class="nav">
-							<div class="nav-menu">
-								<li><a href="projects.html">Projects</a></li>
-								<div class="mini-yellow-bar"></div>
-							</div>
-							<div class="nav-menu">
-								<li><a href="services.html">Services</a></li>
-								<div class="mini-yellow-bar"></div>
-							</div>
-							<div class="nav-menu">
-								<li><a href="process.html">Process</a></li>
-								<div class="mini-yellow-bar"></div>
-							</div>
-							<div class="nav-menu">
-								<li><a href="about.html">About</a></li>
-								<div class="mini-yellow-bar"></div>
-							</div>
-							<div class="nav-menu">
-								<li><a href="contact.html">Contact</a></li>
-								<div class="mini-yellow-bar"></div>
-							</div>
-							<div class="nav-menu">
-								<li><a href="blog.html">Blog</a></li>
-								<div class="mini-yellow-bar"></div>
-							</div>
-						</ul>
+					<ul id="nav" class="nav hidden">
+						<div class="nav-menu">
+							<li><a href="projects.html">Projects</a></li>
+							<div class="mini-yellow-bar"></div>
+						</div>
+						<div class="nav-menu">
+							<li><a href="services.html">Services</a></li>
+							<div class="mini-yellow-bar"></div>
+						</div>
+						<div class="nav-menu">
+							<li><a href="process.html">Process</a></li>
+							<div class="mini-yellow-bar"></div>
+						</div>
+						<div class="nav-menu">
+							<li><a href="about.html">About</a></li>
+							<div class="mini-yellow-bar"></div>
+						</div>
+						<div class="nav-menu">
+							<li><a href="contact.html">Contact</a></li>
+							<div class="mini-yellow-bar"></div>
+						</div>
+						<div class="nav-menu">
+							<li><a href="blog.html">Blog</a></li>
+							<div class="mini-yellow-bar"></div>
+						</div>
+					</ul>
+					<div class="hambur-menu" id="hambur-menu">
+						<div></div>
+						<div></div>
+						<div></div>
 					</div>
 				</div>
 			</div>
 			<div class="container">
 				<div class="hero content">
-					<div class="info col-8">
+					<div class="info">
 						<p><span>Hi! I'm Francisco</span></p>
 						<p>
 							I'm a web designer and developer from El Tigre, Venezuela. I like
@@ -61,7 +64,8 @@
 							<button class="btn btn1">My Projects</button>
 						</div>
 					</div>
-					<div class="my-image col-4">
+					<div class="hero-image">
+						<div class="my-image"></div>
 						<img src="assets/img/me.jpg" alt="" />
 					</div>
 				</div>
@@ -71,12 +75,13 @@
 		<main>
 			<section class="section-w">
 				<div class="container">
-					<h2>Featured Project</h2>
+					<h2>Featured Projects</h2>
 					<div class="projects content">
-						<div class="photo-projects col-7">
+						<div class="projects-image">
+							<div class="photo-projects"></div>
 							<img src="assets/img/projects1.png" alt="" />
 						</div>
-						<div class="info-projects col-5">
+						<div class="info-projects">
 							<h3>Web Design & Development</h3>
 							<p>
 								A simple portfolio showcasing the different aspects of Cazz as a
@@ -96,18 +101,16 @@
 
 			<section class="section-g">
 				<div class="container">
-					<div class="testimonials">
-						<div class="yellow-bar"></div>
-						<p>
-							"Francisco amet consectetur adipisicing elit. Fuga, velit quia.
-							Recusandae hic suscipit, asperiores voluptatibus ad commodi eaque
-							est quae. Est consectetur iusto consequuntur totam."
-						</p>
-						<div class="yellow-bar"></div>
-						<img src="assets/img/chris-fenwick.jpg" alt="Chris Fenwick" />
-						<h4>Chris Fenwick</h4>
-						<h5>Owner of <span>Fenwick Studio</span></h5>
-					</div>
+					<div class="projects-samples">
+						<div class="samples1">
+							<div class="photo-sample photo1"><img class="photo" src="assets/img/innovadores.jpg" alt=""></div>
+							<div class="photo-sample photo2"><img class="photo" src="assets/img/finanzas.png" alt=""></div>
+							<div class="photo-sample photo3"><img class="photo" src="assets/img/perder.png" alt=""></div>
+						</div>
+						<div class="samples2">
+							<div class="photo-sample photo4"><img class="photo" src="assets/img/simon-dice.png" alt=""></div>
+							<div class="photo-sample photo5"><img class="photo" src="assets/img/doctor4.png" alt=""></div>
+						</div>
 				</div>
 			</section>
 
@@ -115,7 +118,7 @@
 				<div class="container services">
 					<h2>My Services</h2>
 					<div class="cards content">
-						<div class="card col-5">
+						<div class="card">
 							<p class="icon"><i class="fas fa-magic"></i></p>
 							<div class="mini-yellow-bar"></div>
 							<h3>Web Design</h3>
@@ -126,7 +129,7 @@
 								eius doloremque quisquam inventore rem!
 							</p>
 						</div>
-						<div class="card col-5">
+						<div class="card">
 							<p class="icon"><i class="fas fa-desktop"></i></p>
 							<div class="mini-yellow-bar"></div>
 							<h3>Web Development</h3>
@@ -137,7 +140,7 @@
 								alias, qui fuga facere, culpa maxime odio ex nesciunt.
 							</p>
 						</div>
-						<div class="card col-5">
+						<div class="card">
 							<p class="icon"><i class="far fa-object-group"></i></p>
 							<div class="mini-yellow-bar"></div>
 							<h3>Editorial Design</h3>
@@ -148,7 +151,7 @@
 								debitis. Officia esse, eum iusto veniam atque.
 							</p>
 						</div>
-						<div class="card col-5">
+						<div class="card">
 							<p class="icon"><i class="far fa-keyboard"></i></p>
 							<div class="mini-yellow-bar"></div>
 							<h3>Contents Redaction</h3>
@@ -168,17 +171,65 @@
 
 			<section class="section-g">
 				<div class="container">
-					<div class="testimonials">
-						<div class="yellow-bar"></div>
-						<p>
-							"Francisco amet consectetur adipisicing elit. Fuga, velit quia.
-							Recusandae hic suscipit, asperiores voluptatibus ad commodi eaque
-							est quae. Est consectetur iusto consequuntur totam."
-						</p>
-						<div class="yellow-bar"></div>
-						<img src="assets/img/adam-feber.jpg" alt="Adam Feber" />
-						<h4>Adam Feber</h4>
-						<h5>Director of Marketing at <span>Chargify</span></h5>
+					<div class="slider">
+						<ul>
+							<li>
+								<div class="testimonials testim1">
+									<div class="yellow-bar"></div>
+									<p>
+										"Francisco amet consectetur adipisicing elit. Fuga, velit
+										quia. Recusandae hic suscipit, asperiores voluptatibus ad
+										commodi eaque est quae. Est consectetur iusto consequuntur
+										totam."
+									</p>
+									<div class="yellow-bar"></div>
+									<img
+										src="assets/img/laís-junqueira.jpg"
+										alt="Laís Junqueira, Elsevier"
+									/>
+									<h4>Laís Junqueira</h4>
+									<h5>Quality, Patient Safety and</h5>
+									<h5>Innovation Manager of <span>Elsevier</span></h5>
+								</div>
+							</li>
+							<li>
+								<div class="testimonials testim2">
+									<div class="yellow-bar"></div>
+									<p>
+										"Francisco ipsam perferendis, velit in illum aperiam ipsum.
+										Aliquam, nemo est repudiandae quis consectetur pariatur
+										debitis possimus cupiditate quos architecto, quae quam."
+									</p>
+									<div class="yellow-bar"></div>
+									<img
+										src="assets/img/alonso-verdugo.jpg"
+										alt="Alonso Versugo, Microsoft"
+									/>
+									<h4>Alonso Verdugo</h4>
+									<h5>Chief Medical Information</h5>
+									<h5>Officer <span>Microsoft LatAm</span></h5>
+								</div>
+							</li>
+							<li>
+								<div class="testimonials testim3">
+									<div class="yellow-bar"></div>
+									<p>
+										"Francisco quos eius consectetur, praesentium at omnis unde
+										libero facere placeat harum vero, sunt aliquam? Perferendis
+										quas deserunt autem at repellat vero illo id labore eaque
+										ipsa soluta."
+									</p>
+									<div class="yellow-bar"></div>
+									<img
+										src="assets/img/marushka-chocobar.jpg"
+										alt="Marushka Chocobar, Gob. Perú"
+									/>
+									<h4>Marushka Chocobar</h4>
+									<h5>Secretaria de Gobierno Digital</h5>
+									<h5>of <span>Consejo de Ministros de Perú</span></h5>
+								</div>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</section>
@@ -187,10 +238,19 @@
 				<div class="container">
 					<h2>From My Blog</h2>
 					<div class="blog-cards content">
-						<div class="blog-card col-4">
-							<img src="assets/img/seo.jpg" alt="" />
+						<div class="blog-card">
+							<div class="image">
+								<img src="assets/img/seo.jpg" alt="" />
+								<div class="overlay">
+									<a href="blog.html">
+										<i class="far fa-file-alt"></i>
+									</a>
+								</div>
+							</div>
 							<div class="card-info">
-								<h3>SEO Basics for Small Business Websites</h3>
+								<a href="blog.html">
+									<h3>SEO Basics for Small Business Websites</h3>
+								</a>
 								<h4><span>Advice</span> / 15th july, 2021</h4>
 								<p>
 									Natus nam libero officia doloremque sit sapiente minima,
@@ -199,10 +259,19 @@
 								</p>
 							</div>
 						</div>
-						<div class="blog-card col-4">
-							<img src="assets/img/notion.jpg" alt="" />
+						<div class="blog-card">
+							<div class="image">
+								<img src="assets/img/notion.jpg" alt="" />
+								<div class="overlay">
+									<a href="blog.html">
+										<i class="far fa-file-alt"></i>
+									</a>
+								</div>
+							</div>
 							<div class="card-info">
-								<h3>Notion - A Simple Way to Organize Your Projects</h3>
+								<a href="blog.html">
+									<h3>Notion - A Simple Way to Organize Your Projects</h3>
+								</a>
 								<h4><span>Side projects</span> / 8th july, 2021</h4>
 								<p>
 									Totam, obcaecati quasi pariatur hic, nisi voluptates veniam
@@ -211,10 +280,19 @@
 								</p>
 							</div>
 						</div>
-						<div class="blog-card col-4">
-							<img src="assets/img/web-client.jpg" alt="" />
+						<div class="blog-card">
+							<div class="image">
+								<img src="assets/img/web-client.jpg" alt="" />
+								<div class="overlay">
+									<a href="blog.html">
+										<i class="far fa-file-alt"></i>
+									</a>
+								</div>
+							</div>
 							<div class="card-info">
-								<h3>Why is Import To Listen Your Web Client</h3>
+								<a href="blog.html">
+									<h3>Why is Important To Listen Your Web Client</h3>
+								</a>
 								<h4><span>Development</span> / 1 july, 2021</h4>
 								<p>
 									Psam, enim dolorem amet deleniti debitis necessitatibus quos
@@ -234,32 +312,35 @@
 		<footer class="footer">
 			<div class="container">
 				<div class="info-footer">
-					<div class="to-contact col-9">
+					<div class="to-contact">
 						<p><span>Let's Work Together</span></p>
 						<p>Have a project you'd like to discuss?</p>
 						<button class="btn btn1">Get in touch</button>
 					</div>
-					<div class="socials col-3">
+					<div class="socials">
 						<ul>
 							<li>
-								<a href="mailto:drfcozapata@gmail.com"
-									><i class="far fa-envelope"></i> Email me</a
-								>
+								<a href="mailto:drfcozapata@gmail.com" target="_blank">
+									<i class="far fa-envelope"></i> Email me
+								</a>
 							</li>
 							<li>
-								<a href="https://twitter.com/drfcozapata"
-									><i class="fab fa-twitter"></i> On Twitter</a
-								>
+								<a href="https://twitter.com/drfcozapata" target="_blank">
+									<i class="fab fa-twitter"></i> On Twitter
+								</a>
 							</li>
 							<li>
-								<a href="https://www.linkedin.com/in/drfcozapata"
-									><i class="fab fa-linkedin-in"></i> On LinkedIn</a
+								<a
+									href="https://www.linkedin.com/in/drfcozapata"
+									target="_blank"
 								>
+									<i class="fab fa-linkedin-in"></i> On LinkedIn
+								</a>
 							</li>
 							<li>
-								<a href="https://github.com/drfcozapata"
-									><i class="fab fa-github"></i> On GitHub</a
-								>
+								<a href="https://github.com/drfcozapata" target="_blank">
+									<i class="fab fa-github"></i> On GitHub
+								</a>
 							</li>
 						</ul>
 					</div>
@@ -270,6 +351,6 @@
 			</div>
 		</footer>
 
-		<script src=""></script>
+		<script src="assets/js/app.js"></script>
 	</body>
 </html>
